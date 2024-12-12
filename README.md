@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project Overview
 
-## Getting Started
+A streamlined design and collaboration tool for seamless prototyping and creativity
 
-First, run the development server:
+# Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- User-Friendly Interface: Easy-to-navigate design tools for all skill levels.
+- Real-Time Collaboration: Work together seamlessly with live updates.
+- Vector Editing: Powerful tools for creating and editing vector graphics.
+- Prototyping: Quickly build interactive prototypes for testing.
+- Export Options: Save designs in multiple formats for easy sharing.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+# Dependencies
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Shadcn
+- Convex
+- Clerk
+- Liveblocks: A library for enabling real-time collaboration in applications, providing easy integration with both client and React environments
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+npm install fabric uuid @liveblocks/client @liveblocks/react
 
-## Learn More
+For styles
 
-To learn more about Next.js, take a look at the following resources:
+npx shadcn@latest init
+npm install @liveblocks/react-comments
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# Installation
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+<!-- Clone the repository -->
 
-## Deploy on Vercel
+git clone https://github.com/jatingandhidev/pixo.git
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<!-- Navigate to project directory -->
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+cd pixo
+
+<!-- Install dependencies -->
+
+npm install
+
+npm i date-fns --force
+npm i zustand --force
+npm i convex-helpers --force
+
+# Usage
+
+=> npm start
+=> Open your browser and go to http://localhost:3000.
+
+# Contact
+
+Email: jatingandhi.dev@gmail.com
+GitHub: @jatingandhidev
+
+Notes
+
+Followed this to setup Convex and Clerk
+
+https://docs.convex.dev/auth/clerk
