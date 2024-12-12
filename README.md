@@ -1,5 +1,4 @@
-<img align="left" height="125" src="/app/favicon.ico" />
-**Drawit**
+## <img height="50" src="/public/logo.png" /> Drawit
 
 ## Description
 
