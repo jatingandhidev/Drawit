@@ -129,5 +129,7 @@ _(Include screenshots or a link to a live demo if available)_
 
 # References
 
-**Followed this to setup Convex and Clerk**:
-https://docs.convex.dev/auth/clerk
+- **To Setup Middleware for clerk auth**:
+  https://clerk.com/docs/quickstarts/nextjs
+- **To integrate Convex and Clerk**:
+  https://docs.convex.dev/auth/clerk
