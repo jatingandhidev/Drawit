@@ -1,4 +1,5 @@
-# Drawit
+<img align="left" height="125" src="/app/favicon.ico" />
+**Drawit**
 
 ## Description
 
@@ -124,11 +125,10 @@ _(Include screenshots or a link to a live demo if available)_
 
 # Contact
 
-Email: jatingandhi.dev@gmail.com
-GitHub: @jatingandhidev
+- Email: jatingandhi.dev@gmail.com
+- GitHub: @jatingandhidev
 
 # References
 
-=> Followed this to setup Convex and Clerk
-
-- https://docs.convex.dev/auth/clerk
+**Followed this to setup Convex and Clerk**:
+https://docs.convex.dev/auth/clerk
