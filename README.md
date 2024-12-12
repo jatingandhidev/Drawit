@@ -1,4 +1,4 @@
-## <img height="50" src="/public/logo.png" /> Drawit
+## <img height="25" src="/public/logo.png" /> Drawit
 
 ## Description
 
