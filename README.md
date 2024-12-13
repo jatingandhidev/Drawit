@@ -2,7 +2,7 @@
 
 ## Description
 
-A collaborative, real-time whiteboard. Packed with features such as real-time database, whiteboard from scratch with ability to add shapes like Rectangles and Ellipses, Sticky notes and Pencil drawing. Using the newest technologies such as Next.js. 14, Clerk, Convex and LiveBlocks.
+A collaborative, real-time whiteboard. Packed with features such as real-time database, whiteboard from scratch with ability to add shapes like Rectangles and Ellipses, Sticky notes and Pencil drawing. Using the newest technologies such as Next.js. 15, Clerk, Convex and LiveBlocks.
 
 ---
 
@@ -21,8 +21,8 @@ A collaborative, real-time whiteboard. Packed with features such as real-time da
 
 ### Frontend
 
-- **React (19.0.0-rc-66855b96-20241106)**
-- **Next.js (15.0.3)**
+- **React (19)**
+- **Next.js (15)**
 - **Shadcn & Radix UI** for components:
   - Alert Dialog
   - Dialog
@@ -131,5 +131,9 @@ _(Include screenshots or a link to a live demo if available)_
 
 - **To Setup Middleware for clerk auth**:
   https://clerk.com/docs/quickstarts/nextjs
+- **Convex Guide**:
+  https://docs.convex.dev/home
 - **To integrate Convex and Clerk**:
   https://docs.convex.dev/auth/clerk
+- **liveblocks**:
+  https://liveblocks.io/docs

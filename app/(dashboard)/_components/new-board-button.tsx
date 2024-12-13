@@ -5,6 +5,7 @@ import { useApiMutation } from '@/hooks/use-api-mutation'
 import { cn } from '@/lib/utils'
 import { useOrganization } from '@clerk/nextjs'
 import { Plus } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 
 interface NewBoardButtonProps {
@@ -14,6 +15,7 @@ interface NewBoardButtonProps {
 
 export const NewBoardButton = ({ orgId, disabled }: NewBoardButtonProps) => {
   const { organization } = useOrganization()
+  const router = useRouter()
   const { mutate, pending } = useApiMutation(api.board.create)
   const onClick = () => {
     if (!organization) return
@@ -24,7 +26,7 @@ export const NewBoardButton = ({ orgId, disabled }: NewBoardButtonProps) => {
     })
       .then((id) => {
         toast.success('Board Created')
-        // TODO: Redirect to board id
+        router.push(`/board/${id}`)
       })
       .catch(() => toast.error('Failed to create board'))
   }

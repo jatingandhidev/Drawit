@@ -1,6 +1,5 @@
 import { v } from 'convex/values'
 import { defineSchema, defineTable } from 'convex/server'
-import { title } from 'process'
 
 export default defineSchema({
   boards: defineTable({
