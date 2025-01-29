@@ -57,7 +57,7 @@ export const get = query({
         )
         .unique()
         .then((favorite) => {
-          return { ...board, isFavorite: !!favorite }
+          return { ...board, isFavorite: favorite }
         })
     })
 

@@ -1,6 +1,6 @@
 import { v } from 'convex/values'
 
-import { mutation } from './_generated/server'
+import { mutation, query } from './_generated/server'
 
 const images = [
   '/placeholders/1.svg',
@@ -161,6 +161,15 @@ export const unfavorite = mutation({
     }
 
     await context.db.delete(existingFavorite._id)
+
+    return board
+  },
+})
+
+export const get = query({
+  args: { id: v.id('boards') },
+  handler: async (context, args) => {
+    const board = context.db.get(args.id)
 
     return board
   },

@@ -137,3 +137,5 @@ _(Include screenshots or a link to a live demo if available)_
   https://docs.convex.dev/auth/clerk
 - **liveblocks**:
   https://liveblocks.io/docs
+- **room authentication liveblocks**:
+  https://liveblocks.io/docs/authentication/access-token/nextjs
