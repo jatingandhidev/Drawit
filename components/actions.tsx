@@ -11,7 +11,7 @@ import {
 import { api } from '@/convex/_generated/api'
 import { useApiMutation } from '@/hooks/use-api-mutation'
 import { useRenameModal } from '@/store/use-rename-modal'
-import { useOrganization } from '@clerk/nextjs'
+
 import { DropdownMenuContentProps } from '@radix-ui/react-dropdown-menu'
 import { Link2, Pencil, Trash2 } from 'lucide-react'
 import { toast } from 'sonner'
@@ -37,7 +37,7 @@ export const Actions = ({
     mutate({
       id: id,
     })
-      .then((id) => {
+      .then(() => {
         toast.success('Board deleted')
       })
       .catch(() => toast.error('Failed to delete board'))

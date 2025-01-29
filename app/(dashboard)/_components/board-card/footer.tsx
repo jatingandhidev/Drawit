@@ -14,7 +14,7 @@ interface FooterProps {
 export const Footer = ({
   title,
   authorLabel,
-  authorName,
+
   createdAtLabel,
   isFavorite,
   onClick,

@@ -13,7 +13,7 @@ interface NewBoardButtonProps {
   disabled?: boolean
 }
 
-export const NewBoardButton = ({ orgId, disabled }: NewBoardButtonProps) => {
+export const NewBoardButton = ({ disabled }: NewBoardButtonProps) => {
   const { organization } = useOrganization()
   const router = useRouter()
   const { mutate, pending } = useApiMutation(api.board.create)
