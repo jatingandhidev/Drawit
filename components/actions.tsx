@@ -14,6 +14,7 @@ import { useRenameModal } from '@/store/use-rename-modal'
 
 import { DropdownMenuContentProps } from '@radix-ui/react-dropdown-menu'
 import { Link2, Pencil, Trash2 } from 'lucide-react'
+import { useRouter } from 'next/navigation'
 import { toast } from 'sonner'
 
 interface ActionsProps {
@@ -33,11 +34,14 @@ export const Actions = ({
 }: ActionsProps) => {
   const { onOpen } = useRenameModal()
   const { mutate, pending } = useApiMutation(api.board.remove)
+
+  const router = useRouter()
   const onDelete = () => {
     mutate({
       id: id,
     })
       .then(() => {
+        router.push('/')
         toast.success('Board deleted')
       })
       .catch(() => toast.error('Failed to delete board'))
