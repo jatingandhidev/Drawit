@@ -2,7 +2,7 @@
 
 import { useOrganizationList } from '@clerk/nextjs'
 import { Item } from './item'
-import { useEffect, useState } from 'react'
+import { useEffect } from 'react'
 
 export const List = () => {
   const { isLoaded, userMemberships } = useOrganizationList({
