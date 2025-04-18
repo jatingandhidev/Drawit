@@ -2,15 +2,26 @@
 
 import { useOrganizationList } from '@clerk/nextjs'
 import { Item } from './item'
+import { useEffect, useState } from 'react'
 
 export const List = () => {
-  const { userMemberships } = useOrganizationList({
+  const { isLoaded, userMemberships } = useOrganizationList({
     userMemberships: {
       infinite: true,
     },
   })
 
-  if (!userMemberships.data?.length) return null
+  useEffect(() => {
+    if (isLoaded && userMemberships) {
+      userMemberships.revalidate()
+    }
+  }, [isLoaded])
+
+  if (!isLoaded) {
+    return null
+  }
+
+  // if (!userMemberships.data?.length) return null
   return (
     <ul className="space-y-4">
       {userMemberships.data?.map((mem) => (
